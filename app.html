@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app</title>
+</head>
+<body>
+    <img src="1s.jpg" style="position: absolute;left: 500px;width: 288px;height: 288px";>
+    <h1 style="position: absolute; left:500px; top:300px;color: red;">Do You Love Me ???</h1>
+    <input type="button" value="YES" onclick="yesclick()" style="position: absolute;color: lawngreen;left:520px;top:400px"/>
+    <input type="button" value="No" id="a" onmouseover="noHover()" style="position: absolute;color: blue;left: 600px;top:400px;"/>
+    <script>
+        function yesclick() {
+            alert("<3");
+            
+        }
+        function noHover() {
+            let x= Math.round(Math.random()*window.innerHeight);
+            let y= Math.round(Math.random()*window.innerWidth);
+            document.getElementById('a').style.left=y + 'px';
+            document.getElementById('a').style.top=x + 'px';
+
+        }
+    </script>
+</body>
+</html>
